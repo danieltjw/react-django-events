@@ -32,6 +32,9 @@ The overall rating from all users is only revealed once the users themselves hav
 <p align="center">
   <img src=img/events-rating.gif alt="Rating"/>
 </p>
+<p align="center">
+  Ratings mouse-over, mouse-out & submit
+</p>
 
 ---
 
@@ -60,6 +63,12 @@ The overall rating from all users is only revealed once the users themselves hav
 ### SMS Notification Service
 
 An optional SMS notification service can send out a feedback summary after specified interval. This setting can changed on the fly.
+
+---
+
+### Privacy
+
+Person's private information such as phone numbers are not revealed by the API.
 
 ---
 
