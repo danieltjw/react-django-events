@@ -21,10 +21,10 @@ Built with React, Redux, Materialize, RESTful API and Django.
 
 ### Responsive Design
 
-Display adapts to a different of screen sizes.
+Text and presentation adapts to different display resolution.
 
 <p align="center">
-  <img src=img/events-responsive-design.gif alt="Reponsive Design"/>
+  <img src=img/responsive-design.gif alt="Responsive Design"/>
 </p>
 
 ---
