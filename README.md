@@ -5,7 +5,7 @@
 Built with React, Redux, Materialize, RESTful API, PostgreSQL and Django.
 
 <p align="center">
-  <img src=img/events.png alt="Events"/>
+  <img src=img/big-screen.png alt="Big Screen"/>
 </p>
 
 ---
