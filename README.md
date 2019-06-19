@@ -2,7 +2,7 @@
 
 **[Live App](https://eventsr.herokuapp.com)**
 
-Built with React, Redux, Materialize, RESTful API, PostgreSQL and Django.
+Built with React, Redux, Materialize, RESTful API and Django.
 
 <p align="center">
   <img src=img/big-screen.png alt="Big Screen"/>
@@ -10,9 +10,18 @@ Built with React, Redux, Materialize, RESTful API, PostgreSQL and Django.
 
 ---
 
+### Mobile Demo
+
+<p align="center">
+  <img src=img/small-screen.png alt="Small Screen"/>
+  <img src=img/mobile-demo.gif alt="Mobile Demo"/>
+</p>
+
+---
+
 ### Responsive Design
 
-Display adapts to a variety of screen sizes.
+Display adapts to a different of screen sizes.
 
 <p align="center">
   <img src=img/events-responsive-design.gif alt="Reponsive Design"/>
