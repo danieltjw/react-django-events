@@ -13,15 +13,15 @@ Built with React, Redux, Materialize, RESTful API and Django.
 ### Mobile Demo
 
 <p align="center">
-  <img src=img/small-screen.png alt="Small Screen"/>
   <img src=img/mobile-demo.gif alt="Mobile Demo"/>
+  <img src=img/small-screen.png alt="Small Screen"/>
 </p>
 
 ---
 
 ### Responsive Design
 
-Text (event's title and date) and presentation adapts to different display resolutions.
+Text (event's title and date) and components adapt to different display resolutions.
 
 <p align="center">
   <img src=img/responsive-design.gif alt="Responsive Design"/>
