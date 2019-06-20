@@ -21,7 +21,7 @@ Built with React, Redux, Materialize, RESTful API and Django.
 
 ### Responsive Design
 
-Text and presentation adapts to different display resolution.
+Text (event's title and date) and presentation adapts to different display resolutions.
 
 <p align="center">
   <img src=img/responsive-design.gif alt="Responsive Design"/>
