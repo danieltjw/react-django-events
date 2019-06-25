@@ -57,7 +57,7 @@ The overall rating from all users is only revealed once the users themselves hav
 
 ### Performance Optimization
 
-[Lighthouse Report](https://developers.google.com/web/tools/lighthouse/)
+<a href="html/eventsr.herokuapp.com_2019-06-24_20-30-41.html" target="_blank" rel="noopener">Lighthouse Report</a>
 
 <p align="center">
   <img src=img/lighthouse-report.png alt="Lighthouse Report"/>
