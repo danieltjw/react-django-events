@@ -57,7 +57,7 @@ The overall rating from all users is only revealed once the users themselves hav
 
 ### Performance Optimization
 
-<a href="https://danieltjw.github.io/react-django-events/html/eventsr.herokuapp.com_2019-06-24_23-58-01.html" target="_blank" rel="noopener">Lighthouse Report</a>
+<a href="https://danieltjw.github.io/react-django-events/html/eventsr.herokuapp.com_2019-07-05_12-00-56.html" target="_blank" rel="noopener">Lighthouse Report</a>
 
 <p align="center">
   <img src=img/lighthouse-report.png alt="Lighthouse Report"/>
