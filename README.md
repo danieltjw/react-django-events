@@ -83,6 +83,7 @@ The overall rating from all users is only revealed once the users themselves hav
 - Asynchronous resources loading
 - Images Optimization
 - Static files caching
+- Pre-rendering
 
 ---
 
@@ -104,6 +105,12 @@ Person's private information such as phone numbers are not revealed by the API.
   <img valign="top" src=img/events-django-admin-session.png alt="Django Admin Sessions"/>
   <img valign="top" src=img/events-django-admin-speakers.png alt="Django Admin Speakers"/>
 </p>
+
+---
+
+### Testing with jest, enzyme, redux-mock-store
+
+Testing redux actions & reducers, components snapshot testing
 
 ---
 
