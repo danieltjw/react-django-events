@@ -21,7 +21,7 @@ Makes a call to the Open Movie Database API for auto complete suggestions.
 Features:
 
 - Delay (time since user stops typing) before making API call can be set to reduce no. of API calls at the cost of responsiveness
-- Preloader to indicate loading of media details after selection (useful feedback for users on slower network speeds)
+- Preloader to indicate loading of media details after selection (useful feedback for users on slower networks)
 - Caching to further reduce API calls (FIFO arbitrary limit of 1000, 10mins expiry)
 - Intelligently decides if images should be shown in autocomplete dropdown based on latest network speed
 
