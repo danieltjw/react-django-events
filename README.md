@@ -97,7 +97,7 @@ This settings can changed on the fly through heroku's config variable dashboard 
 
 ### Security
 
-Links opened in new window have the [`rel="noopener"` attribute](https://html.spec.whatwg.org/multipage/links.html#link-type-noopener).
+Links opened in new window have the [`rel="noopener"` attribute](https://developers.google.com/web/tools/lighthouse/audits/noopener).
 
 ---
 
