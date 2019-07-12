@@ -1,6 +1,6 @@
 # Events
 
-**[Live App](https://eventsr.herokuapp.com)**
+**[Live App: https://eventsr.herokuapp.com](https://eventsr.herokuapp.com)**
 
 Built with React, Redux, Materialize, RESTful API and Django.
 
@@ -89,7 +89,15 @@ The overall rating from all users is only revealed once the users themselves hav
 
 ### SMS Notification Service
 
-An optional SMS notification service can send out a feedback summary after specified interval. This setting can changed on the fly.
+An optional SMS notification service can send out a feedback summary after specified interval using Django's post_save signal.
+
+This settings can changed on the fly through heroku's config variable dashboard without needing to redeploy the app.
+
+---
+
+### Security
+
+Links opened in new window have the [`rel="noopener"` attribute](https://html.spec.whatwg.org/multipage/links.html#link-type-noopener).
 
 ---
 
@@ -111,6 +119,17 @@ Person's private information such as phone numbers are not revealed by the API.
 ### Testing with jest, enzyme, redux-mock-store
 
 Testing redux actions & reducers, components snapshot testing
+
+---
+
+### Deployment in under 5 steps / mins
+
+1. `npm test`
+2. `npm run build` (creates 'build' directory and any postbuild steps such pre-rendering)
+3. `git commit -a -m "hello world"` (commits the django directory, which includes react's 'build')
+4. `git push heroku master` (heroku runs collectstatic and then deploys the django app which serves the react frontend)
+
+App is now live!
 
 ---
 
