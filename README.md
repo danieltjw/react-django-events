@@ -80,7 +80,7 @@ The overall rating from all users is only revealed once the users themselves hav
 
 - Asynchronous resources loading
 - Images Optimization
-- Static files caching
+- Static files caching (Django and WhiteNoise)
 - Pre-rendering
 
 ---
