@@ -4,9 +4,7 @@
 
 Built with React, Redux, Materialize, RESTful API and Django.
 
-<p align="center">
-  <img src=img/big-screen.png alt="Big Screen"/>
-</p>
+![](img/big-screen.png "Big Screen")
 
 ---
 
