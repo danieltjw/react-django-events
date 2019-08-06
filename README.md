@@ -131,4 +131,134 @@ App is now live!
 
 ---
 
-(Updating...)
+### React Hooks
+
+React Hooks, new to v16.8, are a functional way of writing components compared to class based ones.
+Seems to be the direction React is moving strongly towards (though class-based components will still be supported).
+
+```javascript
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
+
+export default function MovieDetail() {
+  const movie = useSelector(state => state.movie);
+  const movieKeys = useSelector(state => state.movieKeys);
+  const loadingTitle = useSelector(state => state.loadingTitle);
+  useDocumentTitle(movie, loadingTitle);
+
+  // Order of the movieKeys affects the order the movie details displayed
+  const defaultMovieKeys = [
+    "Year",
+    "Actors",
+    "Director",
+    "Plot",
+    "Awards",
+    "Writer",
+    "Genre",
+    "Released",
+    "Runtime",
+    "Rated",
+    "Type",
+    "Country",
+    "Language",
+    "Metascore",
+    "imdbRating",
+    "Website"
+  ];
+
+  function formatWebsite(key, movie) {
+    const url = movie[key];
+    const displayItem = (
+      <p key={key}>
+        <b>Website</b>:{" "}
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          {url}
+        </a>
+      </p>
+    );
+    return displayItem;
+  }
+
+  function formatKeys(keys, movie) {
+    if (keys.length === 0) {
+      keys = defaultMovieKeys;
+    }
+    let displayList = [];
+    for (const key of keys) {
+      let displayItem = null;
+      // API may have keys with ("N/A") values, those are not displayed
+      if (movie[key] !== "N/A" && key in movie) {
+        if (key === "Website") {
+          displayItem = formatWebsite(key, movie);
+        } else if (key === "imdbRating") {
+          displayItem = (
+            <p key={key}>
+              <b>{key}</b>: {movie[key]} ({movie["imdbVotes"]} votes)
+            </p>
+          );
+        } else if (key === "Plot") {
+          displayItem = (
+            <p key={key}>
+              {" "}
+              {movie[key]}
+              <br />
+            </p>
+          );
+        } else {
+          displayItem = (
+            <p key={key}>
+              <b>{key}</b>: {movie[key]}
+            </p>
+          );
+        }
+        displayList.push(displayItem);
+      }
+    }
+    return displayList;
+  }
+
+  if (typeof movie !== "undefined") {
+    const movieDetails = formatKeys(movieKeys, movie);
+    let image = "";
+    if (movie.Poster !== "N/A") {
+      image = (
+        <img
+          className="responsive-img materialboxed"
+          src={movie.Poster.replace("http:", "https:")}
+          alt={"Poster for " + movie.Title}
+          data-caption={"Poster for " + movie.Title}
+        />
+      );
+    }
+    return (
+      <div className="movie card" key={movie.imdbID}>
+        <div className="movie-content row">
+          <div className="center">
+            <div className="col s6 offset-s3 m2 l2">
+              <div className="poster">{image}</div>
+            </div>
+          </div>
+          <div className="col s12 m10 l10" id="details">
+            <b>
+              <p className="flow-text">{movie.Title}</p>
+            </b>
+            {movieDetails}
+          </div>
+        </div>
+      </div>
+    );
+  } else {
+    return <div />;
+  }
+}
+
+function useDocumentTitle(movie, loadingTitle) {
+  useEffect(() => {
+    if (movie) {
+      document.title = movie.Title;
+    } else if (loadingTitle) {
+      document.title = loadingTitle;
+    }
+  }, [movie, loadingTitle]);
+}
+```
