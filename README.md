@@ -25,6 +25,12 @@ Features:
 
 ---
 
+### Network Speed / Bandwidth Awareness
+
+Thoughtfully decides whether to load images based on the user's network speed to ensure an optimal user experience. Extra images are loaded in a fast network setting but not in a congested setting.
+
+---
+
 ### Mobile Demo
 
 <p align="center">
@@ -101,7 +107,7 @@ Links opened in new window have the [`rel="noopener"` attribute](https://develop
 
 ### Privacy
 
-Person's private information such as phone numbers are not revealed by the API.
+A person's private information, such as phone numbers, are not revealed by the API but only used when sending SMS.
 
 ---
 
